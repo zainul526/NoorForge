@@ -1,14 +1,29 @@
 [
   {
     "subject": "Mathematics",
-    "details": "Focus on algebra, calculus, and problem-solving techniques."
+    "details": "Focus on algebra, calculus, and problem-solving techniques.",
+    "level": "Intermediate",
+    "resources": [
+      "https://www.khanacademy.org/math",
+      "12th PCM Notes PDF"
+    ]
   },
   {
     "subject": "Physics",
-    "details": "Covers mechanics, optics, and modern physics concepts."
+    "details": "Covers mechanics, optics, and modern physics concepts.",
+    "level": "Intermediate",
+    "resources": [
+      "https://www.physicsclassroom.com/",
+      "Reference PDFs for 12th Physics"
+    ]
   },
   {
     "subject": "Computer Science",
-    "details": "Programming, data structures, and algorithms."
+    "details": "Programming, data structures, and algorithms.",
+    "level": "Beginner to Advanced",
+    "resources": [
+      "https://www.geeksforgeeks.org/",
+      "Project Templates for practice"
+    ]
   }
 ]
