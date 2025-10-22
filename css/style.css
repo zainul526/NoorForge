@@ -11,10 +11,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     background: #f5f7fa;
-    color: #000; /* default text black */
+    color: #000;
 }
 
 /* =========================
@@ -23,18 +23,20 @@ body {
 header {
     background: #0a0a23;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 20px;
     text-align: center;
+    position: relative;
 }
 
 header h1 {
     margin: 0;
     color: white;
+    font-weight: 600;
 }
 
 nav a {
     color: white;
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
     font-weight: 500;
 }
@@ -55,20 +57,21 @@ main {
 ========================= */
 .hero {
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
     background: #0a0a23;
     color: white;
+    position: relative;
 }
 
 .hero h2 {
-    color: white; /* hero heading white */
-    font-size: 2em;
+    color: white;
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
 .hero p {
-    color: white;
-    font-size: 1.2em;
+    color: #e6e6e6;
+    font-size: 1.2rem;
 }
 
 /* =========================
@@ -84,14 +87,14 @@ section {
 }
 
 section h2 {
-    color: #0a0a23; /* headings dark navy */
+    color: #0a0a23;
     border-left: 5px solid #0a0a23;
     padding-left: 10px;
     margin-bottom: 15px;
 }
 
 section p, section li {
-    color: #000; /* section text black */
+    color: #000;
 }
 
 /* Lists inside sections */
@@ -100,29 +103,8 @@ ul, ol {
 }
 
 /* =========================
-   Team Section
+   Team Showcase Section
 ========================= */
-.team {
-    text-align: center;
-    padding: 50px;
-}
-
-.team-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.team-member {
-    width: 200px;
-}
-
-.team-member img {
-    width: 100%;
-    border-radius: 50%;
-}
-/* Team Showcase Section */
 .team-showcase {
   max-width: 1200px;
   margin: 50px auto;
@@ -187,6 +169,30 @@ ul, ol {
   display: none;
 }
 
+/* =========================
+   Login / Sign-up Buttons
+========================= */
+.header-buttons {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.header-buttons button {
+  background: #ff5a5f;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.header-buttons button:hover {
+  background: #ff3b3f;
+}
 
 /* =========================
    Footer
@@ -195,7 +201,6 @@ footer {
     background: #0a0a23;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
     flex-shrink: 0; /* ensures footer stays at bottom */
 }
-
