@@ -2,17 +2,29 @@
   {
     "title": "HTML Basics",
     "description": "Learn HTML tags, structure, forms, and tables.",
-    "level": "Beginner"
+    "level": "Beginner",
+    "membersOnly": false,
+    "link": "modules/module1.html"
   },
   {
     "title": "CSS Styling",
     "description": "Learn CSS properties, flexbox, grid, and animations.",
-    "level": "Beginner"
+    "level": "Beginner",
+    "membersOnly": false,
+    "link": "modules/module2.html"
   },
   {
     "title": "JavaScript Fundamentals",
     "description": "Learn JS syntax, DOM manipulation, and event handling.",
-    "level": "Intermediate"
+    "level": "Intermediate",
+    "membersOnly": true,
+    "link": "modules/module3.html"
+  },
+  {
+    "title": "Mini Project: Portfolio Website",
+    "description": "Build a complete portfolio website using HTML, CSS, and JS.",
+    "level": "Intermediate",
+    "membersOnly": true,
+    "link": "modules/project1.html"
   }
 ]
-
