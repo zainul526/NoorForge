@@ -1,1 +1,18 @@
+[
+  {
+    "title": "HTML Basics",
+    "description": "Learn HTML tags, structure, forms, and tables.",
+    "level": "Beginner"
+  },
+  {
+    "title": "CSS Styling",
+    "description": "Learn CSS properties, flexbox, grid, and animations.",
+    "level": "Beginner"
+  },
+  {
+    "title": "JavaScript Fundamentals",
+    "description": "Learn JS syntax, DOM manipulation, and event handling.",
+    "level": "Intermediate"
+  }
+]
 
