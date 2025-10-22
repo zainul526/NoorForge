@@ -1,31 +1,61 @@
-#modules-container, #academic-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning - NoorForge</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/learning.css">
+</head>
+<body>
+  <header>
+    <h1>NoorForge Learning</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="learning.html">Learning</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-.module-card, .academic-card {
-  background: #0a0a23;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 250px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
-}
+  <main>
+    <section>
+      <h2>Learning Modules</h2>
+      <div id="modules-container">
+        <div class="module-card" onclick="window.location.href='module1.html'">
+          <h3>HTML Basics</h3>
+          <span>Beginner Friendly</span>
+        </div>
+        <div class="module-card" onclick="window.location.href='module2.html'">
+          <h3>CSS Styling</h3>
+          <span>Intermediate Level</span>
+        </div>
+        <div class="module-card" onclick="window.location.href='module3.html'">
+          <h3>JavaScript Fundamentals</h3>
+          <span>Essential Coding</span>
+        </div>
+      </div>
+    </section>
 
-.module-card:hover, .academic-card:hover {
-  transform: scale(1.05);
-}
+    <section>
+      <h2>Academic Section</h2>
+      <div id="academic-container">
+        <div class="academic-card" onclick="window.location.href='academic1.html'">
+          <h3>12th PCM Notes</h3>
+        </div>
+        <div class="academic-card" onclick="window.location.href='academic2.html'">
+          <h3>Project Templates</h3>
+        </div>
+        <div class="academic-card" onclick="window.location.href='academic3.html'">
+          <h3>Reference PDFs</h3>
+        </div>
+      </div>
+    </section>
+  </main>
 
-.module-card h3, .academic-card h3 {
-  margin-top: 0;
-}
-
-.module-card span {
-  font-style: italic;
-  color: #d1d1d1;
-}
-
+  <footer>
+    <p>&copy; 2025 NoorForge Team — Made by Zain</p>
+  </footer>
+</body>
+</html>
