@@ -4,8 +4,14 @@
     "details": "Focus on algebra, calculus, and problem-solving techniques.",
     "level": "Intermediate",
     "resources": [
-      "https://www.khanacademy.org/math",
-      "12th PCM Notes PDF"
+      {
+        "name": "Khan Academy - Math",
+        "link": "https://www.khanacademy.org/math"
+      },
+      {
+        "name": "12th PCM Notes PDF",
+        "link": "modules/12th_PCM_Notes.pdf"
+      }
     ]
   },
   {
@@ -13,8 +19,14 @@
     "details": "Covers mechanics, optics, and modern physics concepts.",
     "level": "Intermediate",
     "resources": [
-      "https://www.physicsclassroom.com/",
-      "Reference PDFs for 12th Physics"
+      {
+        "name": "Physics Classroom",
+        "link": "https://www.physicsclassroom.com/"
+      },
+      {
+        "name": "Reference PDFs for 12th Physics",
+        "link": "modules/12th_Physics_Refs.pdf"
+      }
     ]
   },
   {
@@ -22,8 +34,14 @@
     "details": "Programming, data structures, and algorithms.",
     "level": "Beginner to Advanced",
     "resources": [
-      "https://www.geeksforgeeks.org/",
-      "Project Templates for practice"
+      {
+        "name": "GeeksforGeeks",
+        "link": "https://www.geeksforgeeks.org/"
+      },
+      {
+        "name": "Project Templates for practice",
+        "link": "modules/project_templates.zip"
+      }
     ]
   }
 ]
