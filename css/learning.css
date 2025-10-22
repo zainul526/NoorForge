@@ -13,15 +13,19 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
-      <a href="learning.html">Learning</a>
+      <a href="learning.html" class="active">Learning</a>
       <a href="team.html">Team</a>
       <a href="contact.html">Contact</a>
+      <a href="login.html" class="login-btn">Login</a>
     </nav>
   </header>
 
   <main>
+
+    <!-- ===================== LEARNING MODULES ===================== -->
     <section>
       <h2>Learning Modules</h2>
+      <p class="section-info">Explore structured topics designed to help you grow from beginner to expert.</p>
       <div id="modules-container">
         <div class="module-card" onclick="window.location.href='module1.html'">
           <h3>HTML Basics</h3>
@@ -38,8 +42,10 @@
       </div>
     </section>
 
+    <!-- ===================== ACADEMIC SECTION ===================== -->
     <section>
       <h2>Academic Section</h2>
+      <p class="section-info">Academic resources for foundational and advanced learning.</p>
       <div id="academic-container">
         <div class="academic-card" onclick="window.location.href='academic1.html'">
           <h3>12th PCM Notes</h3>
@@ -52,6 +58,28 @@
         </div>
       </div>
     </section>
+
+    <!-- ===================== MEMBERS ONLY (LOCKED) ===================== -->
+    <section class="locked-section">
+      <h2>Interactive Quizzes & Challenges</h2>
+      <p class="lock-message">🔒 Available for Members Only — <a href="login.html">Login</a> to unlock quizzes and challenges.</p>
+    </section>
+
+    <section class="locked-section">
+      <h2>Micro Projects</h2>
+      <p class="lock-message">🔒 Exclusive for registered members — practice and improve through guided micro-projects.</p>
+    </section>
+
+    <section class="locked-section">
+      <h2>Peer Mentorship & Collaboration</h2>
+      <p class="lock-message">🔒 Join the NoorForge network to access mentorship and discussion channels.</p>
+    </section>
+
+    <section class="locked-section">
+      <h2>Badges & Progress Tracking</h2>
+      <p class="lock-message">🔒 Earn badges as you complete modules and view progress on your dashboard.</p>
+    </section>
+
   </main>
 
   <footer>
