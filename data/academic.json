@@ -1,0 +1,14 @@
+[
+  {
+    "subject": "Mathematics",
+    "details": "Focus on algebra, calculus, and problem-solving techniques."
+  },
+  {
+    "subject": "Physics",
+    "details": "Covers mechanics, optics, and modern physics concepts."
+  },
+  {
+    "subject": "Computer Science",
+    "details": "Programming, data structures, and algorithms."
+  }
+]
