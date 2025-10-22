@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard | NoorForge</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoorForge - Dashboard</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>NoorForge</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#" id="logoutBtn">Logout</a>
-    </nav>
-  </header>
-
+  <header><h1>NoorForge Dashboard</h1></header>
   <main>
     <section>
-      <h2>Welcome to your Dashboard</h2>
-      <p>Only members can see this content.</p>
+      <h2>Welcome Member</h2>
       <p id="welcomeMsg"></p>
     </section>
   </main>
 
-  <script src="js/auth.js"></script>
+  <script>
+    const user = JSON.parse(localStorage.getItem('currentUser'));
+    if (!user) {
+      alert('Access Denied! Please login.');
+      window.location.href = 'login.html';
+    } else {
+      document.getElementById('welcomeMsg').innerText = `Hello, ${user.username}! Enjoy member access.`;
+    }
+  </script>
 </body>
 </html>
-
