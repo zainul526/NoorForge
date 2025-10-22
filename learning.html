@@ -3,66 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NoorForge Learning</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/learning.css">
+  <title>Learning - NoorForge</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/learning.css">
 </head>
 <body>
-
   <header>
     <h1>NoorForge Learning</h1>
     <nav>
       <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
       <a href="learning.html" class="active">Learning</a>
       <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
       <a href="login.html" class="login-btn">Login</a>
     </nav>
   </header>
 
   <main>
-    <!-- ===== LEARNING MODULES ===== -->
-    <section id="learning-modules">
+
+    <!-- ===================== LEARNING MODULES ===================== -->
+    <section>
       <h2>Learning Modules</h2>
-      <p class="section-info">Structured learning path from beginner to advanced.</p>
-      <div id="modules-container"></div>
+      <p class="section-info">Explore structured topics designed to help you grow from beginner to expert.</p>
+      <div id="modules-container">
+        <div class="module-card" onclick="window.location.href='module1.html'">
+          <h3>HTML Basics</h3>
+          <span>Beginner Friendly</span>
+        </div>
+        <div class="module-card" onclick="window.location.href='module2.html'">
+          <h3>CSS Styling</h3>
+          <span>Intermediate Level</span>
+        </div>
+        <div class="module-card" onclick="window.location.href='module3.html'">
+          <h3>JavaScript Fundamentals</h3>
+          <span>Essential Coding</span>
+        </div>
+      </div>
     </section>
 
-    <!-- ===== ACADEMIC SECTION ===== -->
-    <section id="academic-section">
+    <!-- ===================== ACADEMIC SECTION ===================== -->
+    <section>
       <h2>Academic Section</h2>
-      <p class="section-info">Formal education resources and academic support.</p>
-      <div id="academic-container"></div>
+      <p class="section-info">Academic resources for foundational and advanced learning.</p>
+      <div id="academic-container">
+        <div class="academic-card" onclick="window.location.href='academic1.html'">
+          <h3>12th PCM Notes</h3>
+        </div>
+        <div class="academic-card" onclick="window.location.href='academic2.html'">
+          <h3>Project Templates</h3>
+        </div>
+        <div class="academic-card" onclick="window.location.href='academic3.html'">
+          <h3>Reference PDFs</h3>
+        </div>
+      </div>
     </section>
 
-    <!-- ===== QUIZZES (Members Only) ===== -->
-    <section id="quizzes-section" class="locked-section">
+    <!-- ===================== MEMBERS ONLY (LOCKED) ===================== -->
+    <section class="locked-section">
       <h2>Interactive Quizzes & Challenges</h2>
-      <p class="lock-message">🔒 Available for Members Only. Please <a href="login.html">Login</a> to access.</p>
+      <p class="lock-message">🔒 Available for Members Only — <a href="login.html">Login</a> to unlock quizzes and challenges.</p>
     </section>
 
-    <!-- ===== MICRO PROJECTS ===== -->
-    <section id="projects-section" class="locked-section">
-      <h2>Micro-Projects</h2>
-      <p class="lock-message">🔒 Exclusive to Members. Login to view and participate.</p>
+    <section class="locked-section">
+      <h2>Micro Projects</h2>
+      <p class="lock-message">🔒 Exclusive for registered members — practice and improve through guided micro-projects.</p>
     </section>
 
-    <!-- ===== MENTORSHIP ===== -->
-    <section id="mentorship-section" class="locked-section">
-      <h2>Peer Learning & Mentorship</h2>
-      <p class="lock-message">🔒 Join as a member to access mentorship resources and sessions.</p>
+    <section class="locked-section">
+      <h2>Peer Mentorship & Collaboration</h2>
+      <p class="lock-message">🔒 Join the NoorForge network to access mentorship and discussion channels.</p>
     </section>
 
-    <!-- ===== BADGES / GAMIFICATION ===== -->
-    <section id="badges-section" class="locked-section">
+    <section class="locked-section">
       <h2>Badges & Progress Tracking</h2>
-      <p class="lock-message">🔒 Unlock achievements and view progress after login.</p>
+      <p class="lock-message">🔒 Earn badges as you complete modules and view progress on your dashboard.</p>
     </section>
+
   </main>
 
   <footer>
-    <p>&copy; 2025 NoorForge Team | Made by Zain</p>
+    <p>&copy; 2025 NoorForge Team — Made by Zain</p>
   </footer>
-
-  <script src="js/learning.js"></script>
 </body>
 </html>
