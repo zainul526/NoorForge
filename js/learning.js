@@ -56,10 +56,27 @@ fetch('data/academic.json')
           <p class="lock-message">Members Only — <a href="login.html">Login to access</a></p>
         `;
       } else {
+        // Display subject details
         div.innerHTML = `
           <h3>${sub.subject}</h3>
           <p>${sub.details}</p>
         `;
+
+        // If resources exist, add them as clickable links
+        if (sub.resources && sub.resources.length > 0) {
+          const ul = document.createElement('ul');
+          sub.resources.forEach(res => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = res;
+            a.target = "_blank";
+            a.textContent = res.includes("http") ? res : res; // Show link text
+            li.appendChild(a);
+            ul.appendChild(li);
+          });
+          div.appendChild(ul);
+        }
+
         div.style.cursor = 'pointer';
         div.onclick = () => {
           if (sub.link) window.location.href = sub.link;
