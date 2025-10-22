@@ -26,12 +26,14 @@ header {
     padding: 15px 20px;
     text-align: center;
     position: relative;
+    z-index: 100;
 }
 
 header h1 {
     margin: 0;
     color: white;
     font-weight: 600;
+    letter-spacing: 1px;
 }
 
 nav a {
@@ -39,10 +41,11 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #d1d1d1;
 }
 
 /* =========================
@@ -72,6 +75,8 @@ main {
 .hero p {
     color: #e6e6e6;
     font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 /* Animated typing effect */
@@ -80,13 +85,13 @@ main {
     overflow: hidden;
     vertical-align: bottom;
     white-space: nowrap;
-    animation: typing 3s steps(30, end) infinite alternate;
     border-right: 2px solid white;
+    animation: typing 4s steps(30, end) infinite alternate;
 }
 
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from { width: 0; }
+    to { width: 100%; }
 }
 
 /* =========================
@@ -110,6 +115,8 @@ section h2 {
 
 section p, section li {
     color: #000;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 /* Lists inside sections */
@@ -125,35 +132,35 @@ ul, ol {
     margin: 50px auto;
     padding: 20px;
     text-align: center;
+    background: #f5f5f5;
+    border-radius: 10px;
 }
 
 .team-showcase h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
     color: #0a0a23;
 }
 
 .team-container {
     display: flex;
     overflow-x: auto;
-    gap: 20px;
+    gap: 30px;
+    padding-bottom: 20px;
     scroll-behavior: smooth;
-    padding-bottom: 10px;
 }
 
 /* Team Member Cards */
 .team-member {
     min-width: 220px;
-    background: #f5f5f5;
+    background: white;
     border-radius: 15px;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    
-    /* Animation start state */
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateY(50px);
     animation: slideIn 0.8s forwards;
 }
 
@@ -161,11 +168,13 @@ ul, ol {
 .team-member:nth-child(1) { animation-delay: 0.2s; }
 .team-member:nth-child(2) { animation-delay: 0.4s; }
 .team-member:nth-child(3) { animation-delay: 0.6s; }
+.team-member:nth-child(4) { animation-delay: 0.8s; }
+.team-member:nth-child(5) { animation-delay: 1s; }
 
 @keyframes slideIn {
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
@@ -174,8 +183,8 @@ ul, ol {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 10px;
-    transition: transform 0.4s ease;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
 }
 
 .team-member h3 {
@@ -185,16 +194,16 @@ ul, ol {
 
 .team-member p {
     color: #555;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 .team-member:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .team-member:hover img {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 /* Hide scrollbar on Webkit */
