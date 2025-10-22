@@ -5,15 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr. Mohd Fahad Khan - Profile</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #0a0a23;
+        }
+
+        .profile-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            padding: 30px;
+            text-align: center;
+        }
+
+        .profile-container img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #0a0a23;
+            margin-bottom: 20px;
+        }
+
+        .profile-container h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #0a0a23;
+        }
+
+        .profile-container h2 {
+            text-align: left;
+            border-left: 5px solid #0a0a23;
+            padding-left: 10px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .profile-container p {
+            text-align: left;
+            margin: 5px 0;
+            line-height: 1.5;
+        }
+
+        .profile-container p b {
+            color: #0a0a23;
+        }
+
+        .profile-container a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #0a0a23;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .profile-container a:hover {
+            background: #1a1a4a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 15px 0;
+            background: #0a0a23;
+            color: white;
+        }
+
+        /* Responsive */
+        @media(max-width: 600px){
+            .profile-container {
+                padding: 20px;
+            }
+            .profile-container h2 {
+                font-size: 1rem;
+            }
+            .profile-container img {
+                width: 140px;
+                height: 140px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Mr. Mohd Fahad Khan</h1>
-    <img src="../images/mem2.png" alt="Mr. Mohd Fahad Khan" style="width:200px;height:auto;">
-    <p>Role: Project Cooardinater</p>
-    <p>About: [Write detailed info about this member here]</p>
-    <a href="../team.html">Back to Team</a>
-</body>
-     <footer>
-        <p>&copy; 2025 NoorForge Team made by Zain</p>
+    <div class="profile-container">
+        <img src="../images/mem2.png" alt="Mr. Mohd Fahad Khan">
+        <h1>Mr. Mohd Fahad Khan</h1>
+
+        <h2>Personal Details</h2>
+        <p><b>Full Name:</b> Mohd Fahad Khan</p>
+        <p><b>Position:</b> Project Coordinator at NoorForge, DSA Member at Computer Science Society</p>
+        <p><b>Passion:</b> Web Development, Innovation, Technology Solutions</p>
+
+        <h2>Education</h2>
+        <p>Completed 12th Standard with PCM from xyz, 2025</p>
+        <p>Currently pursuing Bachelor of Science in Computer Application</p>
+
+        <h2>Experience</h2>
+        <p>Coordinates NoorForge team and guiding project development</p>
+        <p>Mentoring junior members in web development and project execution</p>
+
+        <h2>Clubs & Engagements</h2>
+        <p>Active in tech and innovation clubs, hackathons participation</p>
+
+        <h2>Skills & Expertise</h2>
+        <p>Web development (HTML, CSS, JS), Project management, Problem-solving, Mentoring</p>
+
+        <h2>Vision & Goals</h2>
+        <p>Transform ideas into functional projects, inspire team members to achieve excellence</p>
+
+        <a href="../team.html">Back to Team</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 NoorForge Team — Made by Zain</p>
     </footer>
+</body>
 </html>
