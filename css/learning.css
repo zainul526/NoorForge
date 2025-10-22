@@ -1,89 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learning - NoorForge</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/learning.css">
-</head>
-<body>
-  <header>
-    <h1>NoorForge Learning</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="learning.html" class="active">Learning</a>
-      <a href="team.html">Team</a>
-      <a href="contact.html">Contact</a>
-      <a href="login.html" class="login-btn">Login</a>
-    </nav>
-  </header>
+/* ===== Containers ===== */
+#modules-container, #academic-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
 
-  <main>
+.locked-section {
+  background: #1a1a3a;
+  color: #ccc;
+  padding: 30px 20px;
+  margin: 30px auto;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 1000px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
 
-    <!-- ===================== LEARNING MODULES ===================== -->
-    <section>
-      <h2>Learning Modules</h2>
-      <p class="section-info">Explore structured topics designed to help you grow from beginner to expert.</p>
-      <div id="modules-container">
-        <div class="module-card" onclick="window.location.href='module1.html'">
-          <h3>HTML Basics</h3>
-          <span>Beginner Friendly</span>
-        </div>
-        <div class="module-card" onclick="window.location.href='module2.html'">
-          <h3>CSS Styling</h3>
-          <span>Intermediate Level</span>
-        </div>
-        <div class="module-card" onclick="window.location.href='module3.html'">
-          <h3>JavaScript Fundamentals</h3>
-          <span>Essential Coding</span>
-        </div>
-      </div>
-    </section>
+.locked-section:hover {
+  transform: scale(1.02);
+  background: #23235a;
+}
 
-    <!-- ===================== ACADEMIC SECTION ===================== -->
-    <section>
-      <h2>Academic Section</h2>
-      <p class="section-info">Academic resources for foundational and advanced learning.</p>
-      <div id="academic-container">
-        <div class="academic-card" onclick="window.location.href='academic1.html'">
-          <h3>12th PCM Notes</h3>
-        </div>
-        <div class="academic-card" onclick="window.location.href='academic2.html'">
-          <h3>Project Templates</h3>
-        </div>
-        <div class="academic-card" onclick="window.location.href='academic3.html'">
-          <h3>Reference PDFs</h3>
-        </div>
-      </div>
-    </section>
+.lock-message a {
+  color: #ffcc00;
+  text-decoration: underline;
+}
 
-    <!-- ===================== MEMBERS ONLY (LOCKED) ===================== -->
-    <section class="locked-section">
-      <h2>Interactive Quizzes & Challenges</h2>
-      <p class="lock-message">🔒 Available for Members Only — <a href="login.html">Login</a> to unlock quizzes and challenges.</p>
-    </section>
+.lock-message a:hover {
+  color: #ffd633;
+}
 
-    <section class="locked-section">
-      <h2>Micro Projects</h2>
-      <p class="lock-message">🔒 Exclusive for registered members — practice and improve through guided micro-projects.</p>
-    </section>
+/* ===== Cards ===== */
+.module-card, .academic-card {
+  background: #0a0a23;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  min-height: 120px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
 
-    <section class="locked-section">
-      <h2>Peer Mentorship & Collaboration</h2>
-      <p class="lock-message">🔒 Join the NoorForge network to access mentorship and discussion channels.</p>
-    </section>
+.module-card:hover, .academic-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  background: #151540;
+}
 
-    <section class="locked-section">
-      <h2>Badges & Progress Tracking</h2>
-      <p class="lock-message">🔒 Earn badges as you complete modules and view progress on your dashboard.</p>
-    </section>
+.module-card h3, .academic-card h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
 
-  </main>
+.module-card span {
+  display: block;
+  margin-top: 8px;
+  font-style: italic;
+  color: #d1d1d1;
+  font-size: 0.95rem;
+}
 
-  <footer>
-    <p>&copy; 2025 NoorForge Team — Made by Zain</p>
-  </footer>
-</body>
-</html>
+/* ===== Header & Navbar ===== */
+header {
+  background: #0a0a23;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+  color: #ffcc00;
+}
+
+.login-btn {
+  font-weight: 600;
+}
+
+/* ===== Section Titles ===== */
+section h2 {
+  text-align: center;
+  color: #0a0a23;
+  margin-bottom: 10px;
+}
+
+.section-info {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #0a0a23;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.95rem;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 768px) {
+  #modules-container, #academic-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .module-card, .academic-card {
+    width: 80%;
+  }
+}
