@@ -5,18 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr. Zainul Abideen - Profile</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #0a0a23;
+        }
+
+        .profile-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            padding: 30px;
+            text-align: center;
+        }
+
+        .profile-container img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #0a0a23;
+            margin-bottom: 20px;
+        }
+
+        .profile-container h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #0a0a23;
+        }
+
+        .profile-container h2 {
+            text-align: left;
+            border-left: 5px solid #0a0a23;
+            padding-left: 10px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .profile-container p {
+            text-align: left;
+            margin: 5px 0;
+            line-height: 1.5;
+        }
+
+        .profile-container p b {
+            color: #0a0a23;
+        }
+
+        .profile-container a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #0a0a23;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .profile-container a:hover {
+            background: #1a1a4a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 15px 0;
+            background: #0a0a23;
+            color: white;
+        }
+
+        /* Responsive */
+        @media(max-width: 600px){
+            .profile-container {
+                padding: 20px;
+            }
+            .profile-container h2 {
+                font-size: 1rem;
+            }
+            .profile-container img {
+                width: 140px;
+                height: 140px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Mr. Zainul Abideen</h1>
-    <img src="../images/mem1.jpeg" alt="Mr. Zainul Abideen" style="width:200px;height:auto;">
+    <div class="profile-container">
+        <img src="../images/mem1.jpeg" alt="Mr. Zainul Abideen">
+        <h1>Mr. Zainul Abideen</h1>
 
-    <!-- About section starts -->
-    <div class="profile-about">
         <h2>Personal Details</h2>
         <p><b>Full Name:</b> Zainul Abideen</p>
-        <p><b>Position:</b> 
-            <p>Team Lead at NoorForge</p>
-            <p>Volunteer at Computer Science Society</p>
+        <p><b>Position:</b> Team Lead at NoorForge, Volunteer at Computer Science Society</p>
         <p><b>Passion:</b> Web Development, Innovation, Technology Solutions</p>
 
         <h2>Education</h2>
@@ -35,13 +122,12 @@
 
         <h2>Vision & Goals</h2>
         <p>Transform ideas into functional projects, inspire team members to achieve excellence</p>
+
+        <a href="../team.html">Back to Team</a>
     </div>
-    <!-- About section ends -->
 
-    <a href="../team.html">Back to Team</a>
-</body>
     <footer>
-        <p>&copy; 2025 NoorForge Team made by Zain</p>
+        <p>&copy; 2025 NoorForge Team — Made by Zain</p>
     </footer>
-
+</body>
 </html>
