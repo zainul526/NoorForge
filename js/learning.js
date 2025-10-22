@@ -30,7 +30,7 @@ fetch('data/learning.json')
         `;
         div.style.cursor = 'pointer';
         div.onclick = () => {
-          if (module.link) window.location.href = module.link;
+          if (module.link) window.open(module.link, "_blank");
         };
       }
 
@@ -56,13 +56,12 @@ fetch('data/academic.json')
           <p class="lock-message">Members Only — <a href="login.html">Login to access</a></p>
         `;
       } else {
-        // Display subject details
         div.innerHTML = `
           <h3>${sub.subject}</h3>
           <p>${sub.details}</p>
         `;
 
-        // If resources exist, add them as clickable links
+        // Add clickable resources if any
         if (sub.resources && sub.resources.length > 0) {
           const ul = document.createElement('ul');
           sub.resources.forEach(res => {
@@ -70,7 +69,7 @@ fetch('data/academic.json')
             const a = document.createElement('a');
             a.href = res;
             a.target = "_blank";
-            a.textContent = res.includes("http") ? res : res; // Show link text
+            a.textContent = res.split('/').pop(); // show filename
             li.appendChild(a);
             ul.appendChild(li);
           });
@@ -79,7 +78,7 @@ fetch('data/academic.json')
 
         div.style.cursor = 'pointer';
         div.onclick = () => {
-          if (sub.link) window.location.href = sub.link;
+          if (sub.link) window.open(sub.link, "_blank");
         };
       }
 
