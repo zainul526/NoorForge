@@ -1,1 +1,31 @@
+#modules-container, #academic-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.module-card, .academic-card {
+  background: #0a0a23;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.module-card:hover, .academic-card:hover {
+  transform: scale(1.05);
+}
+
+.module-card h3, .academic-card h3 {
+  margin-top: 0;
+}
+
+.module-card span {
+  font-style: italic;
+  color: #d1d1d1;
+}
 
