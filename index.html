@@ -117,18 +117,27 @@
       from { width: 0 }
       to { width: 100% }
     }
-
   </style>
 </head>
 <body>
   <header>
     <h1>NoorForge</h1>
-    <nav>
+    <nav id="mainNav">
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
       <a href="learning.html">Learning</a>
       <a href="team.html">Team</a>
       <a href="contact.html">Contact</a>
+      <!-- Login / Sign Up links -->
+      <span id="authLinks">
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+      </span>
+      <!-- Dashboard / Logout links (for logged-in members) -->
+      <span id="memberLinks" style="display:none;">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#" id="logoutBtn">Logout</a>
+      </span>
     </nav>
   </header>
 
@@ -241,6 +250,29 @@
   <footer>
     <p>&copy; 2025 NoorForge Team — Made by Zain</p>
   </footer>
+
+  <!-- Login / Logout JS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const user = JSON.parse(localStorage.getItem('currentUser'));
+      const authLinks = document.getElementById('authLinks');
+      const memberLinks = document.getElementById('memberLinks');
+      const logoutBtn = document.getElementById('logoutBtn');
+
+      if (user) {
+        authLinks.style.display = 'none';
+        memberLinks.style.display = 'inline';
+      } else {
+        authLinks.style.display = 'inline';
+        memberLinks.style.display = 'none';
+      }
+
+      logoutBtn.addEventListener('click', () => {
+        localStorage.removeItem('currentUser');
+        alert('Logged out successfully!');
+        window.location.href = 'index.html';
+      });
+    });
+  </script>
 </body>
 </html>
-
