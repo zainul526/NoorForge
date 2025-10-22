@@ -13,25 +13,54 @@
     <h1>NoorForge Learning</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="learning.html">Learning</a>
+      <a href="learning.html" class="active">Learning</a>
       <a href="team.html">Team</a>
+      <a href="login.html" class="login-btn">Login</a>
     </nav>
   </header>
 
   <main>
+    <!-- ===== LEARNING MODULES ===== -->
     <section id="learning-modules">
       <h2>Learning Modules</h2>
+      <p class="section-info">Structured learning path from beginner to advanced.</p>
       <div id="modules-container"></div>
     </section>
 
+    <!-- ===== ACADEMIC SECTION ===== -->
     <section id="academic-section">
       <h2>Academic Section</h2>
+      <p class="section-info">Formal education resources and academic support.</p>
       <div id="academic-container"></div>
+    </section>
+
+    <!-- ===== QUIZZES (Members Only) ===== -->
+    <section id="quizzes-section" class="locked-section">
+      <h2>Interactive Quizzes & Challenges</h2>
+      <p class="lock-message">🔒 Available for Members Only. Please <a href="login.html">Login</a> to access.</p>
+    </section>
+
+    <!-- ===== MICRO PROJECTS ===== -->
+    <section id="projects-section" class="locked-section">
+      <h2>Micro-Projects</h2>
+      <p class="lock-message">🔒 Exclusive to Members. Login to view and participate.</p>
+    </section>
+
+    <!-- ===== MENTORSHIP ===== -->
+    <section id="mentorship-section" class="locked-section">
+      <h2>Peer Learning & Mentorship</h2>
+      <p class="lock-message">🔒 Join as a member to access mentorship resources and sessions.</p>
+    </section>
+
+    <!-- ===== BADGES / GAMIFICATION ===== -->
+    <section id="badges-section" class="locked-section">
+      <h2>Badges & Progress Tracking</h2>
+      <p class="lock-message">🔒 Unlock achievements and view progress after login.</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 NoorForge Team made by Zain</p>
+    <p>&copy; 2025 NoorForge Team | Made by Zain</p>
   </footer>
 
   <script src="js/learning.js"></script>
