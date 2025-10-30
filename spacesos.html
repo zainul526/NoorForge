@@ -10,14 +10,28 @@
     .project-hero {
       text-align: center;
       padding: 60px 20px;
-      background: url('space.jpeg') center/cover no-repeat;
+      background: url('Projects/SpaceSOS/space.jpeg') center/cover no-repeat;
       color: white;
-      backdrop-filter: blur(3px);
+      position: relative;
+    }
+
+    .project-hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+    }
+
+    .project-hero h1,
+    .project-hero p {
+      position: relative;
+      z-index: 10;
     }
 
     .project-hero h1 {
       font-size: 60px;
       text-shadow: 0 0 15px #00f6ff;
+      margin: 0;
     }
 
     .tagline {
@@ -30,7 +44,7 @@
       max-width: 900px;
       margin: auto;
       padding: 40px 20px;
-      color: #ddd;
+      color: #000;
       line-height: 1.7;
     }
 
@@ -40,10 +54,12 @@
       border-radius: 12px;
       border: 1px solid #222;
       margin-top: 30px;
+      color: #ddd;
     }
 
     .team-box h3 {
       margin-bottom: 15px;
+      color: white;
     }
 
     .team-box ul {
@@ -70,10 +86,13 @@
       text-decoration: none;
       font-weight: bold;
       box-shadow: 0 0 12px #05c46b88;
+      display: inline-block;
+      transition: 0.3s;
     }
 
     .play-btn:hover {
-      opacity: 0.85;
+      transform: scale(1.05);
+      opacity: 0.9;
     }
   </style>
 </head>
@@ -123,13 +142,13 @@
   </div>
 
   <div class="main-action">
-    <a href="projects/spacesos/index.html" class="play-btn">🎮 Play Space SOS</a>
+    <a href="Projects/SpaceSOS/index.html" class="play-btn">🎮 Play Space SOS</a>
   </div>
 
 </section>
 
 <footer>
-  <p>&copy; 2025 NoorForge Team</p>
+  <p>&copy; © 2025 NoorForge Team — Made by Zain</p>
 </footer>
 
 </body>
