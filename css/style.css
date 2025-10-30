@@ -288,3 +288,77 @@ footer {
 .account-menu:hover .dropdown {
     display: block;
 }
+
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.project-showcase {
+  max-width: 950px;
+  margin: auto;
+  background: #0d0d0d;
+  display: flex;
+  gap: 25px;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid #212121;
+  box-shadow: 0 0 15px #00eaff50;
+}
+
+.project-cover {
+  width: 45%;
+  border-radius: 12px;
+}
+
+.project-info {
+  width: 55%;
+  color: #eee;
+}
+
+.tagline {
+  font-size: 18px;
+  color: #32f5ff;
+  margin-bottom: 10px;
+}
+
+.description {
+  line-height: 1.5;
+  margin: 12px 0;
+}
+
+.tech {
+  color: #999;
+  margin-top: 5px;
+}
+
+.project-action-buttons {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  border: none;
+}
+
+.btn.play { background: #05c46b; }
+.btn.details { background: #007bff; }
+.btn.github { background: #4b4b4b; }
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.team {
+  margin-top: 14px;
+  font-size: 14px;
+  color: #bbb;
+}
