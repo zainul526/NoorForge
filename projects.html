@@ -17,32 +17,66 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- Account Menu (Always Visible) -->
-  <div class="account-menu" id="accountMenu">
-    <div class="account-icon">👤</div>
-    <div class="account-dropdown" id="accountDropdown">
-      <a href="login.html" id="loginLink">Login</a>
-      <a href="signup.html" id="signupLink">Sign Up</a>
-      <a href="dashboard.html" id="dashboardLink" style="display:none;">Dashboard</a>
-      <a href="#" id="logoutLink" style="display:none;">Logout</a>
+ <!-- Account Menu (Always Visible) -->
+    <div class="account-menu" id="accountMenu">
+      <div class="account-icon">👤</div>
+      <div class="account-dropdown" id="accountDropdown">
+        <a href="login.html" id="loginLink">Login</a>
+        <a href="signup.html" id="signupLink">Sign Up</a>
+        <a href="dashboard.html" id="dashboardLink" style="display:none;">Dashboard</a>
+        <a href="#" id="logoutLink" style="display:none;">Logout</a>
+      </div>
     </div>
-  </div>
 </header>
 
 
-    <main>
+        <main>
         <section class="projects">
             <h2>Our Projects</h2>
-            <ul>
-                <li>Project 1: AI Chatbot Development</li>
-                <li>Project 2: Web Development Bootcamp</li>
-                <li>Project 3: Study Material Repository</li>
-            </ul>
+
+            <div class="project-grid">
+
+                <!-- Existing Projects Can Stay -->
+                <div class="project-card">
+                    <h3>AI Chatbot Development</h3>
+                    <p>An intelligent chatbot system capable of responding to user queries.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Web Development Bootcamp</h3>
+                    <p>Full-stack training with hands-on real projects and mentoring.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Study Material Repository</h3>
+                    <p>Notes, assignments, past papers & academic help resources.</p>
+                </div>
+
+                <!-- ✅ NEW PROJECT CARD: SPACE SOS -->
+                <div class="project-card highlight">
+                    <img src="assets/spacesos-thumbnail.png" class="project-img" alt="Space SOS Game Preview">
+
+                    <h3>Space SOS (Arcade Survival Game)</h3>
+                    <p>Fast-paced space rescue game where every second counts. Built with Phaser.js.</p>
+
+                    <p class="stack">Tech: JavaScript • Phaser 3 • Game Assets Design</p>
+
+                    <div class="project-buttons">
+                        <a href="projects/spacesos/index.html" class="btn play">🎮 Play Now</a>
+                        <a href="https://github.com/YourRepositoryLink" class="btn github" target="_blank">GitHub</a>
+                        <a href="space-sos-details.html" class="btn details">📄 View Details</a>
+                    </div>
+
+                    <p class="team-credit">Created by: <strong>You + Team (3 Members)</strong></p>
+                </div>
+
+            </div>
         </section>
     </main>
 
+
     <footer>
-        <p>&copy; 2025 NoorForge Team</p>
+        <p>&copy; © 2025 NoorForge Team — Made by Zain</p>
     </footer>
 </body>
 </html>
